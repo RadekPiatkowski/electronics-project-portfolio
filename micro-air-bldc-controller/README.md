@@ -1,6 +1,6 @@
 # Micro Air — sterownik dwóch silników BLDC z sygnalizacją RGB
 
-**Klient:** Micro Air  
+**Klient:** MICROAIR Sp. z o.o.  
 **Rodzaj projektu:** realizacja komercyjna  
 **Zakres:** projekt elektroniki, PCB, zasilania oraz sterowania dwoma silnikami BLDC
 
