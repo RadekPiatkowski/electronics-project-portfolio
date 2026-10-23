@@ -2,7 +2,7 @@
 
 **Klient:** MICROAIR Sp. z o.o.  
 **Rodzaj projektu:** realizacja komercyjna dla branży automotive  
-**Zakres:** projekt sterownika dwóch silników BLDC wraz z układem zasilania i dedykowanymi płytkami PCB
+**Zakres:** Projekt sterownika dwóch silników BLDC wraz z układem zasilania oraz sygnalizacją RGB.
 
 ## Opis projektu
 
