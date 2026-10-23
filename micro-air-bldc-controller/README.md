@@ -2,77 +2,88 @@
 
 **Klient:** Micro Air  
 **Rodzaj projektu:** realizacja komercyjna  
-**Zakres:** projekt elektroniki, PCB, układu zasilania oraz sterowania dwoma silnikami BLDC
+**Zakres:** projekt elektroniki, PCB, zasilania oraz sterowania dwoma silnikami BLDC
 
 ## Opis projektu
 
-W ramach projektu zaprojektowałem **dwie współpracujące ze sobą płytki PCB**, połączone za pomocą złączy goldpin. Układ służy do sterowania dwoma silnikami BLDC oraz wizualnej prezentacji różnicy ich prędkości obrotowych.
+W ramach projektu zaprojektowałem dwie współpracujące ze sobą płytki PCB, połączone za pomocą złączy goldpin.
 
-### Płyta zasilająca
+Układ odpowiada za sterowanie dwoma silnikami BLDC, pomiar ich prędkości na podstawie sygnałów z czujników Halla oraz wizualizację różnicy prędkości za pomocą diod RGB.
 
-Pierwsza płytka pełni funkcję modułu zasilającego oraz wykonawczego.
+## Płyta zasilająco-sygnalizacyjna
 
-Układ jest zasilany napięciem **30 V DC** i wykorzystuje dwie przetwornice DC/DC:
+Pierwsza płytka odpowiada za zasilanie układu, zasilanie silników oraz sygnalizację RGB.
 
-- **5 V** — zasilanie części elektronicznej,
-- **12 V** — zasilanie części związanej z silnikami BLDC.
+Układ jest zasilany napięciem **30 V DC**. Na płytce znajdują się dwie przetwornice DC/DC generujące napięcia:
 
-Na płytce znajdują się również układy odpowiedzialne za zasilanie silników oraz diody **RGB LED**, które tworzą wizualny wskaźnik różnicy prędkości pomiędzy dwoma napędami.
+- **12 V** — dla części związanej z napędami BLDC,
+- **5 V** — dla elektroniki sterującej.
 
-### Płyta sterująca
+Jedna strona płytki zawiera sekcję zasilania i przetwornice, natomiast po drugiej stronie znajdują się diody RGB tworzące wizualny wskaźnik różnicy prędkości obu silników.
 
-Druga płytka stanowi główny sterownik urządzenia.
+### Strona z diodami RGB
 
-Układ został oparty na mikrokontrolerze **ATmega**, który odpowiada za:
+![Płyta zasilająco-sygnalizacyjna - strona RGB](pcb-rgb.png)
+
+Diody RGB pokazują aktualną różnicę prędkości pomiędzy silnikami. Kolor zależy od wartości oraz kierunku uchybu.
+
+### Strona z sekcją zasilania
+
+![Płyta zasilająco-sygnalizacyjna - przetwornice](pcb-power.png)
+
+Na tej stronie znajdują się przetwornice DC/DC oraz elementy odpowiedzialne za dystrybucję zasilania w układzie.
+
+## Płyta sterująca
+
+Druga płytka pełni funkcję głównego sterownika urządzenia.
+
+![Płyta sterująca - ATmega328PB](pcb-controller.png)
+
+Układ został oparty na mikrokontrolerze **ATmega328PB**, który odpowiada za:
 
 - sterowanie dwoma silnikami BLDC,
 - generowanie sygnałów PWM,
 - odczyt sygnałów z czujników Halla,
-- pomiar i porównywanie prędkości obrotowych obu silników,
-- obliczanie uchybu pomiędzy prędkościami,
+- pomiar prędkości obrotowej obu silników,
+- porównywanie ich prędkości,
+- wyznaczanie wartości i kierunku uchybu,
 - sterowanie sygnalizacją RGB.
 
-Kolor diod informuje o wzajemnej prędkości silników:
+W zależności od różnicy prędkości układ zmienia kolor podświetlenia:
 
-- 🔴 **czerwony** — jeden z silników obraca się szybciej względem drugiego,
-- 🔵 **niebieski** — różnica prędkości występuje w przeciwnym kierunku,
-- 🟢 **zielony** — prędkości obu silników znajdują się w założonym zakresie zgodności.
+- **czerwony** — jeden z silników pracuje szybciej od drugiego,
+- **niebieski** — różnica występuje w przeciwnym kierunku,
+- **zielony** — prędkości obu silników są zgodne w przyjętym zakresie tolerancji.
 
-Pozwala to na szybką wizualną ocenę synchronizacji obu napędów.
+Dzięki temu możliwa jest szybka ocena, czy oba napędy pracują z odpowiednio zbliżoną prędkością.
 
 ## Mój zakres prac
 
+W projekcie odpowiadałem za:
+
 - opracowanie koncepcji elektroniki,
 - zaprojektowanie dwóch płytek PCB,
-- projekt sekcji zasilania **30 V / 12 V / 5 V**,
+- zaprojektowanie sekcji zasilania **30 V / 12 V / 5 V**,
 - dobór komponentów,
-- projekt części sterującej opartej na mikrokontrolerze ATmega,
-- sterowanie silnikami BLDC za pomocą PWM,
-- obsługa sygnałów z czujników Halla,
-- implementacja pomiaru i porównywania prędkości silników,
-- sterowanie diodami RGB na podstawie wartości uchybu,
+- projekt układu sterującego z mikrokontrolerem ATmega328PB,
+- realizację sterowania silnikami BLDC za pomocą PWM,
+- obsługę sygnałów z czujników Halla,
+- pomiar i porównywanie prędkości obu silników,
+- sterowanie diodami RGB na podstawie różnicy prędkości,
 - przygotowanie dokumentacji produkcyjnej,
 - uruchomienie i testowanie prototypu,
 - wprowadzanie poprawek po testach.
 
 ## Wdrożenie
 
-Projekt został wykorzystany **komercyjnie przez klienta i wdrożony do produkcji**.
+Projekt został wykorzystany komercyjnie i wdrożony do produkcji.
 
 Na podstawie przygotowanego projektu klient wyprodukował około **300 kompletów płytek PCB**.
 
-Projekt został więc zweryfikowany nie tylko na etapie prototypu, ale również podczas seryjnej produkcji i rzeczywistego użytkowania urządzenia.
-
-## Wizualizacja projektu
-
-*W tym miejscu znajduje się wizualizacja 3D zaprojektowanych płytek PCB.*
-
-## Gotowe płytki
-
-*W tym miejscu znajduje się zdjęcie fizycznie wykonanych płytek.*
+Projekt przeszedł więc nie tylko etap prototypu i testów, ale został również wykorzystany w seryjnie wykonanych urządzeniach.
 
 ## Poufność
 
-Ze względu na komercyjny charakter projektu publikuję wyłącznie **wizualizacje PCB oraz zdjęcia gotowych płytek**.
+Ze względu na komercyjny charakter projektu publikuję wyłącznie wizualizacje PCB oraz zdjęcia wykonanych płytek.
 
 Schematy elektryczne, pliki produkcyjne, kod źródłowy oraz pozostała dokumentacja techniczna nie są udostępniane publicznie.
