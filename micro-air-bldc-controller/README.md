@@ -1,14 +1,14 @@
-# Micro Air — sterownik dwóch silników BLDC z sygnalizacją RGB
+# MICROAIR — sterownik dwóch silników BLDC z sygnalizacją RGB
 
 **Klient:** MICROAIR Sp. z o.o.  
-**Rodzaj projektu:** realizacja komercyjna  
-**Zakres:** projekt elektroniki, PCB, zasilania oraz sterowania dwoma silnikami BLDC
+**Rodzaj projektu:** realizacja komercyjna dla branży automotive  
+**Zakres:** projekt sterownika dwóch silników BLDC wraz z układem zasilania i dedykowanymi płytkami PCB
 
 ## Opis projektu
 
 W ramach projektu zaprojektowałem dwie współpracujące ze sobą płytki PCB, połączone za pomocą złączy goldpin.
 
-Układ odpowiada za sterowanie dwoma silnikami BLDC, pomiar ich prędkości na podstawie sygnałów z czujników Halla oraz wizualizację różnicy prędkości za pomocą diod RGB.
+Układ został zaprojektowany do zastosowania w pojeździe i odpowiada za sterowanie dwoma silnikami BLDC, pomiar ich prędkości na podstawie sygnałów z czujników Halla oraz wizualizację różnicy prędkości za pomocą diod RGB.
 
 ## Płyta zasilająco-sygnalizacyjna
 
@@ -55,8 +55,6 @@ W zależności od różnicy prędkości układ zmienia kolor podświetlenia:
 - **niebieski** — różnica występuje w przeciwnym kierunku,
 - **zielony** — prędkości obu silników są zgodne w przyjętym zakresie tolerancji.
 
-Dzięki temu możliwa jest szybka ocena, czy oba napędy pracują z odpowiednio zbliżoną prędkością.
-
 ## Mój zakres prac
 
 W projekcie odpowiadałem za:
@@ -76,11 +74,9 @@ W projekcie odpowiadałem za:
 
 ## Wdrożenie
 
-Projekt został wykorzystany komercyjnie i wdrożony do produkcji.
+Projekt został wdrożony komercyjnie i wykorzystany w rozwiązaniu przeznaczonym dla branży automotive.
 
 Na podstawie przygotowanego projektu klient wyprodukował około **300 kompletów płytek PCB**.
-
-Projekt przeszedł więc nie tylko etap prototypu i testów, ale został również wykorzystany w seryjnie wykonanych urządzeniach.
 
 ## Poufność
 
