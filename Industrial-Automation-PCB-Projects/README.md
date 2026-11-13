@@ -1,5 +1,7 @@
 # Projekty PCB dla automatyki przemysłowej
 
+**Zleceniodawca:** Firma.
+
 Zestaw płytek drukowanych opracowanych w ramach komercyjnej współpracy z firmą z branży automatyki przemysłowej.
 
 Projekty obejmują adaptery połączeniowe, płytki do integracji urządzeń przemysłowych oraz rozwiązania umożliwiające montaż i podłączanie modułów elektronicznych.
