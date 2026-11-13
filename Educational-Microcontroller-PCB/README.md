@@ -1,5 +1,7 @@
 # Projekt edukacyjny – płytka sterująca z mikrokontrolerem
 
+**Zleceniodawca:** Klient indywidualny – osoba prywatna.
+
 Projekt płytki PCB wykonany na indywidualne zamówienie studentki na potrzeby projektu edukacyjnego.
 
 Układ został zaprojektowany z myślą o integracji mikrokontrolera z elementami wykonawczymi i czujnikami.
