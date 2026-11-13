@@ -42,7 +42,7 @@ Mikrokontroler ESP32 będzie przetwarzał odebrane sygnały i sterował serwomec
 
 ## Wizualizacja 3D – wstępna wersja PCB
 
-![Wstępna wersja PCB](pcb2.png)
+![Wstępna wersja PCB](Wstępna wersja PCB.png)
 
 ---
 
