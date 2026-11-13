@@ -1,5 +1,7 @@
 # Modułowy system pomiarowy i zarządzania energią – projekt dydaktyczny
 
+**Zleceniodawca:** Klient indywidualny – osoba prywatna.
+
 Projekt płytki PCB opracowany na indywidualne zamówienie na potrzeby zajęć dydaktycznych dla studentów uczelni technicznej.
 
 Układ stanowi platformę edukacyjną umożliwiającą poznanie zasad działania systemów pomiarowych, zarządzania energią, zasilania akumulatorowego oraz komunikacji mikrokontrolera z modułami elektronicznymi.
