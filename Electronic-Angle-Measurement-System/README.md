@@ -1,5 +1,7 @@
 # Elektroniczny system pomiaru kąta i zakresu ruchu
 
+**Zleceniodawca:** Klient indywidualny – osoba prywatna.
+
 Projekt urządzenia elektronicznego przeznaczonego do pomiaru kątów oraz zakresu ruchu, w tym monitorowania zmian położenia i ruchomości stawów.
 
 Układ został zaprojektowany z myślą o zastosowaniach wymagających pomiaru położenia kątowego oraz analizy zakresu wykonywanych ruchów.
