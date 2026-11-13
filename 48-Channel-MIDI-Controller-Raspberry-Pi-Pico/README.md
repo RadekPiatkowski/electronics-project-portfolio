@@ -1,5 +1,7 @@
 # Kontroler MIDI z 48 potencjometrami – Raspberry Pi Pico
 
+**Zleceniodawca:** Klient indywidualny – osoba prywatna.
+
 Projekt elektronicznego kontrolera MIDI wyposażonego w 48 potencjometrów, przeznaczonego do sterowania parametrami urządzeń i oprogramowania muzycznego.
 
 Urządzenie zostało opracowane na indywidualne zamówienie klienta.
