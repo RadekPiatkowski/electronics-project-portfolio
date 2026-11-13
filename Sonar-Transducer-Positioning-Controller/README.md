@@ -40,9 +40,13 @@ Mikrokontroler ESP32 będzie przetwarzał odebrane sygnały i sterował serwomec
 
 ---
 
-## Wizualizacja 3D – wstępna wersja PCB
+## Wstępna wersja PCB
 
-![Wstępna wersja PCB](Wstępna wersja PCB.png)
+Wizualizacja 3D pierwszej wersji płytki sterownika pozycjonowania przetwornika echosondy.
+
+Przedstawiona konstrukcja będzie podlegać dalszym modyfikacjom i testom.
+
+![Wstępna wersja PCB](pcb2.png)
 
 ---
 
