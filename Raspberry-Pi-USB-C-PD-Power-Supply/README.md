@@ -1,5 +1,7 @@
 # Zasilacz Raspberry Pi z USB-C Power Delivery i Power Path
 
+**Zleceniodawca:** Klient indywidualny – osoba prywatna.
+
 Projekt układu zasilania Raspberry Pi, wykorzystującego technologię USB-C Power Delivery, dwie przetwornice DC/DC oraz układ zarządzania energią BQ z funkcją Power Path.
 
 **Główne rozwiązania:**
