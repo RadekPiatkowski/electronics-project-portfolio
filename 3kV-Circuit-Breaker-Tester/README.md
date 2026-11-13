@@ -1,5 +1,7 @@
 # Stanowisko testowe układu komutacyjnego wyłącznika trakcyjnego 3 kV
 
+**Zleceniodawca:** Firma.
+
 Projekt stanowiska testowego przeznaczonego do badania działania tyrystora w układzie komutacyjnym wyłącznika stosowanego w pojazdach trakcyjnych zasilanych napięciem 3 kV DC.
 
 Stanowisko zostało opracowane w ramach pracy zawodowej w celu automatyzacji procesu testowania aparatury elektrycznej.
