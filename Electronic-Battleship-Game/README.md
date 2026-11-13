@@ -8,18 +8,19 @@ Projekt elektronicznej gry w statki, opracowywany na indywidualne zamówienie kl
 
 Obecna konstrukcja stanowi **wersję prototypową**, przeznaczoną do testowania układów elektronicznych, sprawdzania logiki gry oraz weryfikacji zastosowanych rozwiązań.
 
-Docelowa wersja urządzenia będzie wyposażona w **planszę obejmującą 200 pól**.
+Docelowa wersja urządzenia będzie wyposażona w **planszę obejmującą 200 pól** oraz elektroniczne modele statków współpracujące z układem sterowania.
 
 ## Główne rozwiązania
 
 - Mikrokontroler STM32.
 - Obsługa przycisków sterujących.
-- Elektroniczne wykrywanie pionków umieszczanych na planszy.
+- Elektroniczne wykrywanie położenia statków na planszy.
 - Sterowanie sygnalizacją LED.
-- Układy realizujące funkcję oddawania strzałów.
+- Elektroniczne układy realizujące funkcję oddawania strzałów.
+- Wykrywanie i sygnalizacja trafień.
 - Sygnalizacja dźwiękowa.
 - Układy zasilania i sterowania elementami wykonawczymi.
-- Dedykowane płytki PCB współpracujące z płytą główną.
+- Dedykowane płytki PCB planszy oraz elektronicznych statków.
 
 ## Zakres wykonanych prac
 
@@ -34,33 +35,43 @@ Docelowa wersja urządzenia będzie wyposażona w **planszę obejmującą 200 p�
 
 ---
 
-## 1. Pierwsza wersja płytki głównej PCB
+## 1. Plansza do gry – pierwsza wersja PCB
 
-![Pierwsza wersja PCB](<PCB wersja 1.jpg>)
+Pierwsza wersja prototypowej płytki planszy, przeznaczona do testowania układów elektronicznych i mechanizmu wykrywania statków.
 
-## 2. Druga strona pierwszej wersji PCB
+![Pierwsza wersja planszy PCB](<PCB wersja 1.jpg>)
 
-![Tył pierwszej wersji PCB](<PCB tyl wersja 1.jpg>)
+## 2. Plansza do gry – druga strona pierwszej wersji PCB
 
-## 3. Druga wersja płytki głównej PCB
+Widok dolnej strony pierwszej wersji płytki planszy.
 
-![Druga wersja PCB](<PCB wersja 2.jpg>)
+![Druga strona planszy PCB](<PCB tyl wersja 1.jpg>)
 
-## 4. Pierwsza wersja modułu gry
+## 3. Plansza do gry – druga wersja PCB
 
-![Moduł gry wersja 1](<Statek wersja 1.jpg>)
+Zmodyfikowana wersja płytki planszy, opracowana w ramach dalszego rozwoju i testowania konstrukcji.
 
-## 5. Druga wersja modułu gry
+![Druga wersja planszy PCB](<PCB wersja 2.jpg>)
 
-![Moduł gry wersja 2](<Statek wersja 2.jpg>)
+## 4. Elektroniczny statek – pierwszy rodzaj
+
+Projekt pierwszego rodzaju statku wyposażonego w dedykowany układ elektroniczny, współpracujący z planszą do gry.
+
+![Pierwszy rodzaj elektronicznego statku](<Statek wersja 1.jpg>)
+
+## 5. Elektroniczny statek – drugi rodzaj
+
+Projekt drugiego rodzaju statku z odrębną konstrukcją płytki PCB, przeznaczonego do wykorzystania w elektronicznej grze w statki.
+
+![Drugi rodzaj elektronicznego statku](<Statek wersja 2.jpg>)
 
 ---
 
 ## Informacje o realizacji
 
-Projekt pozostaje na etapie prototypowania i testów. Przedstawione zdjęcia dokumentują dotychczasowe wersje konstrukcji elektronicznej.
+Projekt pozostaje na etapie prototypowania i testów. Przedstawione zdjęcia dokumentują rozwój konstrukcji, obejmujący kolejne wersje planszy oraz dwa różne rodzaje elektronicznych statków.
 
-Kolejny etap obejmuje opracowanie docelowej wersji planszy z 200 polami oraz dalszą integrację układów elektronicznych.
+Kolejny etap obejmuje opracowanie docelowej planszy z **200 polami**, dalszą integrację układów elektronicznych oraz testowanie kompletnego systemu.
 
 **Projektant elektroniki i PCB:** Radek Piątkowski
 
