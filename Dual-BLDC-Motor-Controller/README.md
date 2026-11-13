@@ -1,5 +1,7 @@
 # Sterownik dwóch silników BLDC z sygnalizacją RGB
 
+**Zleceniodawca:** Firma.
+
 Projekt komercyjnego urządzenia elektronicznego do sterowania dwoma silnikami BLDC z sygnalizacją RGB.
 
 **Technologie:** ATmega328PB | PWM | Czujniki Halla | RGB LED | DC/DC
