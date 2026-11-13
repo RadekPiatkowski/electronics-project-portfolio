@@ -40,4 +40,30 @@ Docelowa wersja urządzenia będzie wyposażona w **planszę obejmującą 200 p�
 
 ## 2. Druga strona pierwszej wersji PCB
 
-![Tył pierwszej wersji PCB](<PCB tyl wersja 1
+![Tył pierwszej wersji PCB](<PCB tyl wersja 1.jpg>)
+
+## 3. Druga wersja płytki głównej PCB
+
+![Druga wersja PCB](<PCB wersja 2.jpg>)
+
+## 4. Pierwsza wersja modułu gry
+
+![Moduł gry wersja 1](<Statek wersja 1.jpg>)
+
+## 5. Druga wersja modułu gry
+
+![Moduł gry wersja 2](<Statek wersja 2.jpg>)
+
+---
+
+## Informacje o realizacji
+
+Projekt pozostaje na etapie prototypowania i testów. Przedstawione zdjęcia dokumentują dotychczasowe wersje konstrukcji elektronicznej.
+
+Kolejny etap obejmuje opracowanie docelowej wersji planszy z 200 polami oraz dalszą integrację układów elektronicznych.
+
+**Projektant elektroniki i PCB:** Radek Piątkowski
+
+**Oprogramowanie mikrokontrolera:** Radek Piątkowski
+
+*Pełna dokumentacja techniczna, schematy elektroniczne, kod źródłowy oraz pliki produkcyjne nie są udostępniane publicznie.*
