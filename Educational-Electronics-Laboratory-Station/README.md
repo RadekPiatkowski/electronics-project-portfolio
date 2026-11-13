@@ -1,5 +1,7 @@
 # Stanowisko laboratoryjne do zajęć dydaktycznych
 
+**Zleceniodawca:** Klient indywidualny – osoba prywatna.
+
 Projekt i wykonanie stanowiska laboratoryjnego przeznaczonego do prowadzenia zajęć praktycznych dla studentów uczelni technicznej.
 
 Stanowisko zostało opracowane na indywidualne zamówienie prowadzącego zajęcia, z przeznaczeniem do wykorzystania w procesie dydaktycznym.
